@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>let str = "codegym";
+let vowel = [];
+
+function countVowel(str) {
+
+    for (let i = 0; i < str.length; i++) {
+
+        let val = str[i] === "a" ||  str[i] === "o" || str[i] === "e" || str[i] === "u" || str[i] === "i";
+
+        if(val){
+            vowel.push(str[i]);
+        }
+    }
+    document.write(`có  ${vowel.length} chữ cái nguyên âm`);
+}
+
+countVowel(str);
+</script>
+
+</body>
+</html>
